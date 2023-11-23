@@ -2,6 +2,8 @@
 利用MPI来实现矩阵和向量的乘法
 # 修改运行时线程的数量
 通过修改makefile文件中的`thread_count = 1`这条语句中的来修改
+# 修改问题规模
+通过修改`subtest/include`中的`parameters.h`中的`M`和`N`的值来修改问题规模
 # 输出说明
 `output_mpi.m`中存放的是通过mpi计算的结果；`output_test.m`中存放的是通过一般串行程序计算的结果；
 
