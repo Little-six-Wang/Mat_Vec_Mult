@@ -28,7 +28,7 @@ int main(){
   local_m = m / comm_sz;
 	
   local_x = malloc(local_n * sizeof(double));
-  local_y = malloc(local_n * sizeof(double));
+  local_y = malloc(local_m * sizeof(double));
   local_A = malloc(local_m * n * sizeof(double));
 
   Read_vector(local_A, n * local_m, m, n, "A", my_rank, MPI_COMM_WORLD);
